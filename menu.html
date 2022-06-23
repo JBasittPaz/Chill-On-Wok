@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chill-On-Wok | Menu.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img\favicon.ico">
 </head>
-<body>
+<body style="margin: 0.5em">
     <header class="header">
         <nav>
             <div class="menu">
@@ -19,53 +21,105 @@
         </nav>
         <div>
             <img class="banner" src="img\restaurant-g525765d49_1280.jpg" alt="banner">
-            <h1 class="logo">Chill-On-Wok</h1>
+            <h1 style="margin-top: 0.6em;" class="logo">Chill-On-Wok</h1>
         </div>
     </header>
 
-    <main class="main">
+    <main style="margin-top: 1em;" class="main">
         <section>
             <h1 class="h1">Menu</h1>
         </section>
+        <div style="width: 100%;display: flex;justify-content: center;">
+            <div style="width: 60%;border: solid 2px #202020;border-radius: 5px;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
 
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img\chinese-food-g3cb413f5e_1920.jpg" class="d-block w-100" alt="Foto de Wan Tan">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img\chinese-g2fcb72a81_1920.jpg" class="d-block w-100" alt="Foto de Salteado de carne">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img\nem-g27b2fc358_1920.jpg" class="d-block w-100" alt="Foto de arrolladitos primavera">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img\noodles-gaba37b248_1920.jpg" class="d-block w-100" alt="Foto de fideos con pollo">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
         <section>
-            <div style="width: 100%;display: flex;">
-                <div style="width: 30%;">
+            <h2 class="h2">Entrada</h1>
+            <div style="width: 100%;display: flex; justify-content: center;">
+                <div style="width: 50%;">
                     <div>
-                       <h2 class="h2">Entrada</h1>
-                       <p class="texto">Texto de pagina</p>
-                       <p class="texto">Texto de pagina</p>
-                       <p class="texto">Texto de pagina</p>
-                   </div>
-                   <div>
-                       <h2 class="h2">Plato Principal</h1>
-                       <p class="texto">Texto de pagina</p>
-                       <p class="texto">Texto de pagina</p>
-                       <p class="texto">Texto de pagina</p>
-                   </div>
-                   <div>
-                       <h2 class="h2">Postres</h1>
-                       <p class="texto">Texto de pagina</p>
-                       <p class="texto">Texto de pagina</p>
-                       <p class="texto">Texto de pagina</p>
+                       <p class="texto">Entrada 1</p>
+                       <p class="texto">Entrada 2</p>
+                       <p class="texto">Entrada 3</p>
                    </div>
                </div>
-               <div style="width: 35%;" >
-                    <img class="imgboxmenu" style="margin-bottom: 5%;" src="img\nem-g27b2fc358_1920.jpg" alt="Comida1">
-    
-                    <img class="imgboxmenu"  src="img\chinese-food-g3cb413f5e_1920.jpg" alt="Comida2">
-               </div>
-               <div style="width: 35%;" >
-                    <img class="imgboxmenu" style="margin-bottom: 5%;" src="img\chinese-g2fcb72a81_1920.jpg" alt="Comida3">
-                    <img class="imgboxmenu"  src="img\noodles-gaba37b248_1920.jpg" alt="Comida4">
+               <div style="width: 50%;" >
+                    <p class="texto">Precio 1</p>
+                    <p class="texto">Precio 2</p>
+                    <p class="texto">Precio 3</p>
                 </div>
             </div>
-        </section>
-
-    </main>
+            <h2 class="h2">Plato principal</h1>
+            <div style="width: 100%;display: flex; justify-content: center;">
+                <div style="width: 50%;">
+                    <div>
+                       <p class="texto">Plato principal 1</p>
+                       <p class="texto">Plato principal 2</p>
+                       <p class="texto">Plato principal 3</p>
+                   </div>
+               </div>
+               <div style="width: 50%;" >
+                    <p class="texto">Precio 1</p>
+                    <p class="texto">Precio 2</p>
+                    <p class="texto">Precio 3</p>
+                </div>
+            </div>
+            <h2 class="h2">Postre</h1>
+            <div style="width: 100%;display: flex; justify-content: center;">
+                <div style="width: 50%;">
+                    <div>
+                       <p class="texto">Postre 1</p>
+                       <p class="texto">Postre 2</p>
+                       <p class="texto">Postre 3</p>
+                   </div>
+               </div>
+               <div style="width: 50%;" >
+                    <p class="texto">Precio 1</p>
+                    <p class="texto">Precio 2</p>
+                    <p class="texto">Precio 3</p>
+                </div>
+            </div>
+            
+        </section>   
+        
+        </main>
 
     <footer class="footer">
         <section>Todos los derechos reservados.</section>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chill-On-Wok | Contacto.</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img\favicon.ico">
+
+    
 </head>
 <body>
     <header class="header">
@@ -29,24 +32,91 @@
         </section>
 
         <section>
-            <div style="width: 100%;min-height: 530px;display: flex;">
-                <div style="width: 33%;">
+            <div class="containercontactos">
+                <div class="contactos">
                     <h2 class="h2">Teléfono</h1>
-                    <p class="texto">Texto de pagina</p>
+                    <p class="texto">11 1111-1111</p>
                </div>
-               <div style="width: 33%;" >
+               <div class="contactos" >
                     <h2 class="h2">Mail</h1>
-                    <p class="texto">Texto de pagina</p>
+                    <p class="texto">ChillOnWok@gmail.com</p>
                </div>
-               <div style="width: 33%;" >
+               <div class="contactos" >
                     <h2 class="h2">Redes Sociales</h1>
-                    <p class="texto">Texto de pagina</p>
+                    <div style="text-align: center;">
+                        <a href="https://www.facebook.com/">Facebook</a>
+                    </div>
+                    <div style="text-align: center;">
+                        <a href="https://www.instagram.com/">Instagram</a>
+                    </div>
                 </div>
             </div>
         </section>
+        
+        <script>
+            function verEdad(){
+                var Edad = this.getElementById("edadform");
+            if (Edad > 99){
+                alert("Ingrese una edad validad");
+            }
+        }
+        </script>
+    
 
+        <section>
+            <p class="h1">Encuesta de Servicio</p>
+            <div style="display: flex; justify-content: center;">
+                <div class="formulario" style="width: max-content;">
+                    <form action="" method="get" id="envioform" required><br>
+                     <div> <label for="nombreform" ><br>
+                            Ingrese su Nombre y Apellido
+                        </label>
+                     </div>
+                     <div>
+                        <input type="text" id="nombreform" required><br>
+                    </div>
+                    <div>
+                        <label for="telefonoform" >
+                            Teléfono de contacto (opcional)
+                        </label>
+                    </div>
+                    <div>
+                        <input type="text" id="telefonoform"><br>
+                    <div>
+                    <div>
+                        <label for="edadform">
+                            Ingrese su edad
+                        </label>
+                    </div> 
+                    <div>
+                        <input type="text" id="edadform" required><br>
+                        
+                    <div>
+
+                    <div>
+                        <label for="ratingform">
+                        </label>
+                    </div>
+                    <div>  
+                        <label for="ratingform">Califique del 1 al 5 su experiencia en Chill-On-Wok:</label>
+                        <select id="ratingform" name="Rating" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select> 
+                    </div>
+                        <label> Agregar un comentario </label><br>
+                        <textarea name="mensaje" rows="10" cols="60"></textarea><br>
+                        </div>
+                        <input type="submit" value="Read" onclick="alert">
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
-
+    
 
     <footer class="footer">
         <section>Todos los derechos reservados.</section>
