@@ -54,10 +54,18 @@
         </section>
         
         <script>
-            function verEdad(){
+            function verificarNomEdad(){
                 var Edad = this.getElementById("edadform");
-            if (Edad > 99){
-                alert("Ingrese una edad validad");
+                var Nombre = this.getElementById("nombreform");
+                
+                var letras = /^[A-Za-z]+$/; 
+
+            if (Edad.value < 99 && Edad.value > 0){
+                alert("Ingrese una edad validad.");
+                return;
+            }
+            if (!letras.test(Nombre)){
+                alert("Nombre incorrecto, solo debe contener letras.")
             }
         }
         </script>
@@ -110,7 +118,7 @@
                         <label> Agregar un comentario </label><br>
                         <textarea name="mensaje" rows="10" cols="60"></textarea><br>
                         </div>
-                        <input type="submit" value="Read" onclick="alert">
+                        <input type="submit" value="Read" onclick="verificarNomEdad">
                     </form>
                 </div>
             </div>
